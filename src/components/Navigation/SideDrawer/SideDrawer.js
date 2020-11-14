@@ -11,7 +11,7 @@ if(props.open) {
     attachedClasse="SideDrawer Open";
 }
 
-    return(
+    return( 
     <Aux>
     <div className={attachedClasse}> 
    
@@ -19,7 +19,7 @@ if(props.open) {
         <Logo  height="11%" />
        
         <nav>
-            <NavigationItem href="/" active>Burger Builder</NavigationItem>
+            <NavigationItem  isAuthenticated={props.isAuth} >Burger Builder</NavigationItem>
         </nav>
         </div>
     </Aux>
